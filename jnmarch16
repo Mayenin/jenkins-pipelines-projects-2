@@ -1,0 +1,13 @@
+node{
+  def mavenHome = tool name: 'maven16'
+
+  agent{
+    label 'TEST 03'
+  }
+  stage('clone from github reposatory){
+    git 'https://github.com/Lion-Technology-Solutions/jenkins-pipelines-projects-2.git'
+  }
+
+
+  
+}
